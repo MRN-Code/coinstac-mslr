@@ -1,0 +1,81 @@
+[{
+  "covariates": {
+    "value": [
+      [
+        "data.csv"
+      ],
+      [
+        "sepal length",
+        "sepal width",
+        "petal length",
+        "petal width",
+        "label"
+      ],
+      [
+        "number",
+        "number",
+        "number",
+        "number"
+      ]
+    ]
+  },
+  "data": {
+    "value": [
+      [ 
+      ],
+      [
+        "freesurferfile"
+      ],
+      [
+        "3rd-Ventricle",
+        "4th-Ventricle",
+        "5th-Ventricle"      
+    ]
+    ]
+  },
+  "lambda": {
+    "value": 0
+  }
+},
+
+{
+  "covariates": {
+    "value": [
+      [
+        "data.csv"
+
+      ],
+      [
+        "sepal length",
+        "sepal width",
+        "petal length",
+        "petalwidth",
+        "label"
+      ],
+      [
+        "number",
+        "number",
+        "number",
+        "number"
+      ]
+    ]
+  },
+  "data": {
+    "value": [
+      [
+      ],
+      [
+        "freesurferfile"
+      ],
+      [
+        "3rd-Ventricle",
+        "4th-Ventricle",
+        "5th-Ventricle"
+      ]
+    ]
+  },
+  "lambda": {
+    "value": 0
+  }
+}
+ ]
