@@ -5,9 +5,10 @@ Created on Wed Apr 11 10:00:16 2018
 
 @author: Harshvardhan
 """
+import warnings
+
 import numpy as np
 import pandas as pd
-import warnings
 
 with warnings.catch_warnings():
     warnings.simplefilter("ignore")
@@ -58,8 +59,8 @@ def add_site_covariates(args, X):
     biased_X = sm.add_constant(X)
     site_covar_list = args["input"]["site_covar_list"]
 
-    site_matrix = np.zeros(
-        (np.array(X).shape[0], len(site_covar_list)), dtype=int)
+    site_matrix = np.zeros((np.array(X).shape[0], len(site_covar_list)),
+                           dtype=int)
     site_df = pd.DataFrame(site_matrix, columns=site_covar_list)
 
     select_cols = [

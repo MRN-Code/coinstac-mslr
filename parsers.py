@@ -6,7 +6,9 @@ Created on Wed Mar 21 19:25:26 2018
 @author: Harshvardhan
 """
 import os
+
 import pandas as pd
+
 import nibabel as nib
 
 
@@ -16,8 +18,9 @@ def parse_for_y(args, X_files, y_files, y_labels):
 
     for file in y_files:
         if any([curr_X_file in file for curr_X_file in X_files]):
-            y_ = pd.read_csv(
-                os.path.join(args["state"]["baseDirectory"], file), sep='\t')
+            y_ = pd.read_csv(os.path.join(args["state"]["baseDirectory"],
+                                          file),
+                             sep='\t')
             y_.set_index('Measure:volume', inplace=True)
             y = pd.merge(y, y_, how='left', left_index=True, right_index=True)
 
